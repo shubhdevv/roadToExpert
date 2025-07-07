@@ -28,4 +28,4 @@ void solve() {
             solve();
         }
         return 0;
-    }  
+    }   
