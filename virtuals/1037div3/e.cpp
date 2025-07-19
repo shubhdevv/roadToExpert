@@ -4,20 +4,7 @@ typedef long long ll;
 typedef unsigned long long ull;
 # define M_PI  3.14159265358979323846
 void solve() {
-    int n,k;
-    cin>>n>>k;
-    int score = 0;
-    vector<pair<pair<int,int>,int>> v(n);
-     for (auto &[p, t] : v)
-        cin >> p.first >> p.second >> t;
-    sort(v.begin(),v.end());
-     score = k;
-    for(auto &[R,T] : v) {
-        int l = R.first;
-        int r = R.second;
-        if(l<=score && score<=r) score = max(score,T);
-    }
-    cout<<score<<endl;
+    
 }
 
     int main(){
