@@ -4,12 +4,18 @@ typedef long long ll;
 typedef unsigned long long ull;
 # define M_PI  3.14159265358979323846
 void solve() {
-    int n;
-    cin>>n;
-    vector<int> prefix(n), suffix(n);
-    for(auto& x : prefix) cin>>x;
-    for(auto& y : suffix) cin>>y;
-    
+    int n,k;
+        cin>>n>>k;
+        k--;
+        if(n%2==0){
+            int ans=(k%n);
+            cout<<ans+1<<"\n";
+        }
+        else{
+            int mid=(n/2);
+            int ans=((k/mid)+k)%n;
+            cout<<ans+1<<"\n";
+        }
 }
 
     int main(){
