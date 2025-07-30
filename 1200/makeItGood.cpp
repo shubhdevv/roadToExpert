@@ -4,7 +4,14 @@ typedef long long ll;
 typedef unsigned long long ull;
 # define M_PI  3.14159265358979323846
 void solve() {
-    
+        int n;
+		cin >> n;
+		vector<int> a(n);
+		for (auto &it : a) cin >> it;
+		int pos = n - 1;
+		while (pos > 0 && a[pos - 1] >= a[pos]) --pos;
+		while (pos > 0 && a[pos - 1] <= a[pos]) --pos;
+		cout << pos << endl;
 }
 
     int main(){
