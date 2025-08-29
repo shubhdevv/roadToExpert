@@ -4,7 +4,11 @@ typedef long long ll;
 typedef unsigned long long ull;
 # define M_PI  3.14159265358979323846
 void solve() {
-    
+    ll n,k;
+    cin>>n>>k;
+    vector<ll> v(n);
+    for(auto& a : v) cin>>a;
+    vector<int> ans;
 }
 
     int main(){

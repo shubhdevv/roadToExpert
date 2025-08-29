@@ -4,13 +4,23 @@ typedef long long ll;
 typedef unsigned long long ull;
 # define M_PI  3.14159265358979323846
 void solve() {
-    
+    int n;
+    cin>>n;
+    vector<ll> v(n);
+    unordered_map<int,int> f;
+    bool ans = 0;
+        for (int i = 0; i < n;i++) {
+            cin >> v[i];
+            f[v[i]]++;
+            if (f[v[i]] >= 2) ans = 1;
+        }
+    cout<< (ans ? "YES" : "NO")<<endl;
 }
 
     int main(){
         ios::sync_with_stdio(0);
         cin.tie(0);
-        cout.tie(0);
+    cout.tie(0);
         cout<<fixed;
         cout<<setprecision(10);
 //        freopen("timber_input.txt", "r", stdin);
