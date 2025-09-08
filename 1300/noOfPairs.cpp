@@ -4,14 +4,15 @@ typedef long long ll;
 typedef unsigned long long ull;
 # define M_PI  3.14159265358979323846
 void solve() {
-    int n,l,r;
-    int ans;
-    cin>>n>>l>>r;
-    vector<ll>a(n);
-    for(int i=0;i<n;i++) cin>>a[i];
+        ll ans,e,n,s,i,l,r;
+        cin>>n>>l>>r;
+        vector<long long>a(n);
+        for(i=0;i<n;i++)
+        cin>>a[i];
+        
         sort(a.begin(),a.end());
         ans=0;
-        for(int i=0;i<n-1;i++)
+        for(i=0;i<n-1;i++)
         {
              auto itr1=lower_bound(a.begin()+i+1,a.end(),l-a[i]);
              auto itr2=upper_bound(a.begin()+i+1,a.end(),r-a[i]);
